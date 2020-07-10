@@ -1,4 +1,4 @@
-# reddit-webhooks
-posts images from a subreddit via discord webhooks.
+# telegram x discord
+posts images from a subreddit
 
-ok so the whole thing pretty much sucks dick and is useless.
+the whole thing pretty much sucks dick and is useless.
