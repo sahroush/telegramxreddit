@@ -84,7 +84,7 @@ def getrecent(sub , context , update):
     subJson = requests.get(url, headers={'User-Agent': 'MyRedditScraper'}).json()
     post = subJson['data']['children']
     mark = 0
-    for i in range(len(post)):
+    for i in range(min(3,len(post))):
         imageUrl = (post[i]['data']['url'])
         imageTitle = (post[i]['data']['title'])
         if(('jpg' in imageUrl or 'webm' in imageUrl or 'gif' in imageUrl or 'gifv' in imageUrl or 'png' in imageUrl)):
@@ -109,7 +109,7 @@ def rnd(sub , context , update):
     post = subJson['data']['children']
     mark = 0
     stuff = []
-    for i in range(len(post)):
+    for i in range(min(3,len(post))):
         imageUrl = (post[i]['data']['url'])
         imageTitle = (post[i]['data']['title'])
         if(('jpg' in imageUrl or 'webm' in imageUrl or 'gif' in imageUrl or 'gifv' in imageUrl or 'png' in imageUrl)):
